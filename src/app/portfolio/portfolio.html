@@ -1,0 +1,608 @@
+<div class="portfolio">
+
+  <!-- Animated Background -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <a class="logo" href="#home">
+        <span class="logo-bracket">&lt;</span>
+        SR
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav [class.open]="menuOpen">
+        <a href="#home" (click)="closeMenu()">Home</a>
+        <a href="#about" (click)="closeMenu()">About</a>
+        <a href="#skills" (click)="closeMenu()">Skills</a>
+        <a href="#projects" (click)="closeMenu()">Projects</a>
+        <a href="#experience" (click)="closeMenu()">Experience</a>
+        <a href="#contact" (click)="closeMenu()">Contact</a>
+      </nav>
+
+      <button class="menu-btn" (click)="menuOpen = !menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-text">
+
+        <div class="availability">
+          <span class="status-dot"></span>
+          Available for Opportunities
+        </div>
+
+        <p class="small-title">
+          HELLO, I'M
+        </p>
+
+        <h1>
+          Sachin
+          <span>Rathod</span>
+        </h1>
+
+        <h2>
+          Full Stack Developer
+          <span class="separator">|</span>
+          AI Enthusiast
+        </h2>
+
+        <p class="hero-description">
+          I build scalable web applications, intelligent AI-powered
+          solutions and modern digital experiences using
+          <strong>.NET</strong>,
+          <strong>Angular</strong>,
+          <strong>Python</strong> and
+          <strong>AI/ML</strong>.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn primary-btn">
+            View My Work
+            <span>→</span>
+          </a>
+
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me
+          </a>
+
+        </div>
+
+        <div class="social-links">
+
+          <a href="#" aria-label="GitHub">
+            <span>GH</span>
+          </a>
+
+          <a href="#" aria-label="LinkedIn">
+            <span>in</span>
+          </a>
+
+          <a href="#" aria-label="Email">
+            <span>@</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PROFILE IMAGE -->
+      <div class="hero-image-container">
+
+        <div class="image-glow"></div>
+
+        <div class="image-ring ring-one"></div>
+        <div class="image-ring ring-two"></div>
+
+        <div class="profile-card">
+
+          <img
+            src="images/Sachin Profile.png"
+            alt="Sachin Rathod"
+          />
+
+          <div class="floating-card card-top">
+            <span class="card-icon">⚡</span>
+            <div>
+              <strong>2.8+</strong>
+              <small>Years Experience</small>
+            </div>
+          </div>
+
+          <div class="floating-card card-bottom">
+            <span class="card-icon">💻</span>
+            <div>
+              <strong>10+</strong>
+              <small>Projects Built</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
+      Scroll to explore
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section about-section">
+
+    <div class="section-title">
+      <span>01</span>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p class="lead">
+          I'm a passionate software developer focused on building
+          reliable, scalable and intelligent applications.
+        </p>
+
+        <p>
+          My development journey includes backend engineering with
+          ASP.NET Core Web API, modern frontend development with
+          Angular and data-driven applications using PostgreSQL.
+        </p>
+
+        <p>
+          Currently, I'm expanding my expertise in
+          Python, FastAPI, AI/ML, Data Engineering and cloud technologies.
+        </p>
+
+        <div class="about-stats">
+
+          <div class="stat">
+            <strong>2.8+</strong>
+            <span>Years Experience</span>
+          </div>
+
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Projects</span>
+          </div>
+
+          <div class="stat">
+            <strong>5+</strong>
+            <span>Technologies</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="about-card">
+
+        <div class="code-window">
+
+          <div class="window-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <pre><code>
+<span class="purple">const</span> developer = &#123;
+
+  name:
+    <span class="green">"Sachin Rathod"</span>,
+
+  role:
+    <span class="green">"Full Stack Developer"</span>,
+
+  backend:
+    [<span class="green">".NET"</span>,
+     <span class="green">"FastAPI"</span>],
+
+  frontend:
+    [<span class="green">"Angular"</span>,
+     <span class="green">"React"</span>],
+
+  database:
+    [<span class="green">"PostgreSQL"</span>,
+     <span class="green">"SQL"</span>],
+
+  learning:
+    [<span class="green">"AI/ML"</span>,
+     <span class="green">"Data Engineering"</span>]
+
+&#125;;
+          </code></pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section">
+
+    <div class="section-title">
+      <span>02</span>
+      <h2>Technical Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-icon">⚙</div>
+        <h3>Backend</h3>
+
+        <div class="skill-list">
+          <span>ASP.NET Core</span>
+          <span>C#</span>
+          <span>Web API</span>
+          <span>Entity Framework</span>
+          <span>FastAPI</span>
+          <span>Python</span>
+        </div>
+      </div>
+
+
+      <div class="skill-card">
+        <div class="skill-icon">◈</div>
+        <h3>Frontend</h3>
+
+        <div class="skill-list">
+          <span>Angular</span>
+          <span>TypeScript</span>
+          <span>HTML</span>
+          <span>SCSS</span>
+          <span>React</span>
+          <span>Responsive UI</span>
+        </div>
+      </div>
+
+
+      <div class="skill-card">
+        <div class="skill-icon">▣</div>
+        <h3>Database</h3>
+
+        <div class="skill-list">
+          <span>PostgreSQL</span>
+          <span>SQL Server</span>
+          <span>MySQL</span>
+          <span>EF Core</span>
+          <span>SQLAlchemy</span>
+        </div>
+      </div>
+
+
+      <div class="skill-card">
+        <div class="skill-icon">✦</div>
+        <h3>AI & Data</h3>
+
+        <div class="skill-list">
+          <span>AI / ML</span>
+          <span>PySpark</span>
+          <span>Data Engineering</span>
+          <span>ETL</span>
+          <span>OpenRouter</span>
+          <span>AI Chatbots</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section projects-section">
+
+    <div class="section-title">
+      <span>03</span>
+      <h2>Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 1 -->
+      <article class="project-card">
+
+        <div class="project-number">01</div>
+
+        <div class="project-content">
+
+          <div class="project-icon">🌾</div>
+
+          <h3>Rathod Jaggery & Agro ERP</h3>
+
+          <p>
+            Complete agriculture and jaggery management platform
+            with labor management, attendance, payments,
+            dealer inquiries and AI assistant integration.
+          </p>
+
+          <div class="tech-stack">
+            <span>.NET 8</span>
+            <span>Angular</span>
+            <span>PostgreSQL</span>
+            <span>AI</span>
+          </div>
+
+          <a href="#" class="project-link">
+            View Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 2 -->
+      <article class="project-card">
+
+        <div class="project-number">02</div>
+
+        <div class="project-content">
+
+          <div class="project-icon">🐄</div>
+
+          <h3>PashuMandi</h3>
+
+          <p>
+            Digital livestock marketplace connecting customers
+            and vendors with animal listings, authentication,
+            location and marketplace functionality.
+          </p>
+
+          <div class="tech-stack">
+            <span>ASP.NET Core</span>
+            <span>PostgreSQL</span>
+            <span>React Native</span>
+            <span>Expo</span>
+          </div>
+
+          <a href="#" class="project-link">
+            View Project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 3 -->
+      <article class="project-card">
+
+        <div class="project-number">03</div>
+
+        <div class="project-content">
+
+          <div class="project-icon">🤖</div>
+
+          <h3>AI Assistant</h3>
+
+          <p>
+            AI-powered conversational assistant supporting
+            multilingual text and voice interaction with
+            business data and intelligent responses.
+          </p>
+
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>AI/ML</span>
+            <span>Angular</span>
+          </div>
+
+          <a href="#" class="project-link">
+            View Project →
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section experience-section">
+
+    <div class="section-title">
+      <span>04</span>
+      <h2>Experience & Journey</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-date">Present</span>
+
+          <h3>Full Stack Developer</h3>
+
+          <h4>.NET + Angular</h4>
+
+          <p>
+            Developing scalable business applications,
+            REST APIs, database integrations and modern
+            Angular interfaces.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <span class="timeline-date">Current Learning</span>
+
+          <h3>AI & Data Engineering</h3>
+
+          <h4>Python • SQL • PySpark • AI/ML</h4>
+
+          <p>
+            Building knowledge in AI/ML, data processing,
+            ETL pipelines, Python backend development
+            and cloud data technologies.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+  <section class="cta-section">
+
+    <div class="cta-content">
+
+      <span class="cta-label">LET'S BUILD SOMETHING</span>
+
+      <h2>
+        Turn your idea into
+        <span>reality.</span>
+      </h2>
+
+      <p>
+        I'm open to interesting projects, collaborations
+        and professional opportunities.
+      </p>
+
+      <a href="#contact" class="btn primary-btn">
+        Let's Connect →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact-section">
+
+    <div class="section-title">
+      <span>05</span>
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <h3>Let's talk.</h3>
+
+        <p>
+          Have a project, opportunity or idea?
+          Feel free to reach out.
+        </p>
+
+        <div class="contact-item">
+          <span>✉</span>
+          <div>
+            <small>Email</small>
+            <strong>your.email@gmail.com</strong>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span>☎</span>
+          <div>
+            <small>Phone</small>
+            <strong>+91 XXXXX XXXXX</strong>
+          </div>
+        </div>
+
+      </div>
+
+
+      <form class="contact-form">
+
+        <input
+          type="text"
+          placeholder="Your Name"
+        />
+
+        <input
+          type="email"
+          placeholder="Your Email"
+        />
+
+        <input
+          type="text"
+          placeholder="Subject"
+        />
+
+        <textarea
+          rows="6"
+          placeholder="Your Message">
+        </textarea>
+
+        <button type="button" class="btn primary-btn">
+          Send Message →
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+
+    <div class="footer-logo">
+      <span>&lt;</span> SR <span>/&gt;</span>
+    </div>
+
+    <p>
+      © 2026 Sachin Rathod. All rights reserved.
+    </p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </footer>
+
+</div>
